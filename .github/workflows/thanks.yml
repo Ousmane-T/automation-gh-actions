@@ -28,7 +28,7 @@ jobs:
 
                   //create comment thanking contributor
                   const comment = await github.rest.issues.createComment({owner: owner, repo: repo, issue_number: issue_number, body: `Thank you @${issue.data.user.login} for your contribution!`});
-                  console.log(`comment id: ${comment.data.id});
+                  console.log(`comment id: ${comment.data.id}`);
                   console.log(comment.data);
 
 
